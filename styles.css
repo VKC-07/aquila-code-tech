@@ -54,10 +54,11 @@ summary {
 }
 
 h1 {
-  font-size: clamp(2.9rem, 5.8vw, 5.4rem);
+  font-size: clamp(2.9rem, 5vw, 4.8rem);
   line-height: 0.98;
   letter-spacing: -0.04em;
-  max-width: 12ch;
+  max-width: 14ch;
+  text-wrap: balance;
 }
 
 h1 span {
@@ -68,7 +69,7 @@ h2 {
   font-size: clamp(2rem, 3.2vw, 3.15rem);
   line-height: 1.03;
   letter-spacing: -0.03em;
-  max-width: 15ch;
+  max-width: 18ch;
 }
 
 h3,
@@ -78,7 +79,7 @@ summary {
 }
 
 .page-shell {
-  width: min(1180px, calc(100% - 32px));
+  width: min(1240px, calc(100% - 40px));
   margin: 0 auto;
   padding-bottom: 48px;
 }
@@ -148,10 +149,14 @@ summary {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-  gap: 28px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1.18fr) minmax(340px, 0.82fr);
+  gap: 36px;
+  align-items: start;
   padding-top: 32px;
+}
+
+.hero-copy {
+  max-width: 760px;
 }
 
 .eyebrow {
@@ -413,7 +418,7 @@ summary {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 24px;
-  align-items: stretch;
+  align-items: start;
   padding: 30px;
   background: linear-gradient(135deg, rgba(15, 111, 104, 0.12), rgba(255, 247, 232, 0.92));
 }
@@ -421,13 +426,13 @@ summary {
 .contact-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background: rgba(255, 255, 255, 0.86);
 }
 
 .contact-link {
   font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
   line-height: 1.15;
   word-break: break-word;
 }
