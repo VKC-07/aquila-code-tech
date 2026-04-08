@@ -1,5 +1,14 @@
 const revealItems = document.querySelectorAll(".reveal");
+const topbar = document.querySelector(".topbar");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+const syncTopbar = () => {
+  if (!topbar) {
+    return;
+  }
+
+  topbar.classList.toggle("compact", window.scrollY > 18);
+};
 
 if (reduceMotion.matches || !("IntersectionObserver" in window)) {
   revealItems.forEach((item) => item.classList.add("visible"));
@@ -14,12 +23,15 @@ if (reduceMotion.matches || !("IntersectionObserver" in window)) {
       });
     },
     {
-      threshold: 0.16,
+      threshold: 0.14,
     }
   );
 
   revealItems.forEach((item, index) => {
-    item.style.transitionDelay = `${Math.min(index * 60, 360)}ms`;
+    item.style.transitionDelay = `${Math.min(index * 55, 330)}ms`;
     revealObserver.observe(item);
   });
 }
+
+syncTopbar();
+window.addEventListener("scroll", syncTopbar, { passive: true });
