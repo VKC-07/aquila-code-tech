@@ -690,7 +690,36 @@ summary {
 .faq-list {
   display: grid;
   gap: 14px;
-  margin-top: 28px;
+}
+
+.faq-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 0.74fr) minmax(0, 1.26fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.faq-copy {
+  max-width: 520px;
+}
+
+.faq-copy p:not(.eyebrow) {
+  margin-top: 18px;
+}
+
+.faq-note {
+  margin-top: 24px;
+  padding: 22px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 24px;
+  background: rgba(255, 249, 241, 0.62);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.mini-list-compact {
+  gap: 10px;
+  margin-top: 16px;
 }
 
 .faq-item {
@@ -799,6 +828,7 @@ summary {
   .topbar,
   .hero,
   .section-grid,
+  .faq-shell,
   .decision-shell,
   .cta-shell,
   .system-grid,
