@@ -1,0 +1,24 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aquila-bg" x1="16" y1="10" x2="82" y2="86" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3A63E"/>
+      <stop offset="1" stop-color="#D7662D"/>
+    </linearGradient>
+    <linearGradient id="aquila-wing" x1="58" y1="24" x2="79" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF2DB"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="8" width="80" height="80" rx="24" fill="url(#aquila-bg)"/>
+
+  <path
+    d="M31 67L45.8 29H51.6L66.4 67H57.8L54.8 58.9H42.6L39.6 67H31ZM45.5 50.7H51.9L48.7 41.2L45.5 50.7Z"
+    fill="white"
+  />
+
+  <path
+    d="M57.2 29.8C64.8 30.6 71.1 33.4 76 38.4C70.3 38.6 65.1 40.8 60.2 45.1C61.1 39.7 60.1 34.6 57.2 29.8Z"
+    fill="url(#aquila-wing)"
+  />
+</svg>
